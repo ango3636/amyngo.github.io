@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="style1.css">
+<title>Amy's Portfolio</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<body>
+<div id="sidebar">
+    <h1>MENU</h1>
+    <button class="btn" onclick="showTab('tab0')"> Home</button>
+    <button class="btn" onclick="showTab('tab1')"> Resume</button>
+    <button class="btn" onclick="showTab('tab2')"> Education</button>
+    <button class="btn" onclick="showTab('tab3')"> Skills</button>
+    <button class="btn" onclick="showTab('tab4')"> Projects</button>
+    <button class="btn" onclick="showTab('tab5')"> Work Experience</button>
+    <button class="btn" onclick="showTab('tab6')"> Contact Me</button>
+    
+</div>
+
+<div id="content">
+    <div id="tab0" class="tab">
+        <h2>Biography</h2>
+        <img src="images/9F274D48-321F-4DE2-8542-E83F001A316C.JPEG"  style="float:left" width=250  >
+        <p>Hello. My name is Amy Ngo. I am currently a student at the University of Missouri - Kansas City.
+            I am pursuing a Bachelor of Science in Computer Science. I will be graduating as of December 2025. 
+            I have an interest in software development and graphic design.
+        </p>
+        <br>
+        <p>At school, I am involved in:</p>
+        <ul>
+            <li>Association of Computing Machinery: Mission to create projects that solve real world problems through computer programming</li>
+            <li>Girl’s Gains Club: Creating an inclusive environment for girls to feel empowered at the gym</li>
+            <li>Volleyball Unites the World: Introduces a variety of cultures through playing volleyball,
+                practicing teamwork with different people, and getting together at dinners</li>
+        </ul>
+    </div>
+
+    <div id="tab1" class="tab">
+        <h2>Resume</h2>
+        <center>
+        <h3>Amy Ngo</h3>
+        <h3>Liberty, Missouri 64068</h3>
+        <h3>Phone: 816-349-1710</h3>
+        <h3>Email: anfgv@umsystem.edu</h3>
+        <br>
+        <a href="WDResume.pdf" target = "blank"><button class="btn2"><span>Click Here for The PDF Version</span></button></a>
+        </center>
+    </div>
+
+    <div id="tab2" class="tab">
+        <h2>Education</h2>
+        <h3><u>Metropolitan Community College - <i>Associate’s Degree</i></u></h3>
+        <h5>Involved with the “Early College Program”, this allowed me to earn college credit for free while in high school at the time.</h5>
+        <br>
+        <h3><u>University of Missouri - Kansas City - <i>Expected Graduation: Dec 2025</i></u></h3>
+        <ul>
+            <li>Pursuing: Bachelors of Science in Computer Science</li>
+            <li>Cumulative GPA: 3.8</li>
+            <li>Dean’s List: Fall 2021-Fall 2024</li>
+            <li>Chancellor's Scholarship: Awarded for above a 25 ACT score and/or 3.5 GPA</li>
+        </ul>
+        <h3><u>Computer Science Related Courses: <i>Taken at UMKC</i></u></h3>
+        <ul>
+            <li>CS 101 & 201: Programming Languages 1 & 2</li>
+            <li>CS 191 & 291: Discrete Structure 1 & 2</li>
+            <li>CS 303: Data Structures</li>
+            <li>CS 349: Java Program Application</li>
+            <li>CS 404: Introduction to Algorithms</li>
+            <li>CS 449: Foundations of Software Engineering</li>
+        </ul>
+    </div>
+
+    <div id="tab3" class="tab">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python: Programmed a game that guesses what number the user is thinking of</li>
+            <li>C++: Programmed a shopping cart where the user can add items, remove items, and calculate
+                their total</li>
+            <li>Java: Programmed an application connected to a database that allows a company to create,
+                delete, and update customer information</li>
+            <li>HTML and JavaScript</li>
+        </ul>
+    </div>
+
+    <div id="tab4" class="tab">
+        <h2>Projects</h2>
+        <p>A list of sample projects I have done for school:</p>
+        <ul>
+            <li><a href="https://github.com/ango3636/CS449-SOS-Game" target = "blank">SOS Game</a>
+                : A multiplayer game that emulates the classic game, Tic-Tac-Toe. Written using Java.</li>
+            <li>
+                <a href="KCEnergy.pdf" target="blank">KC Energy</a>
+                : A database system for adding, removing, and updating client information. Written using Java.</li>
+            <li>
+                <a href="https://replit.com/@amyyes/program-4?v=1#main.cpp" target="blank">Shopping Cart Calculator</a>
+                : A calculator for adding, subtracting, and counting items in a customers shopping cart. Written using C++.</li>
+        </ul>
+    </div>
+
+    <div id="tab5" class="tab">
+        <h2>Work Experience</h2>
+        <h3><b>Homegoods - </b><i>Sales Associate</i></h3>
+        <ul>
+            <li>Experienced customer service and how to interact with different types of customers</li>
+            <li>Adapted to different types of jobs and training across the store (cashier, sales floor associate,
+                and backroom processor)</li>
+            <li>Efficiently multitasked connecting with customers while keeping the store orderly</li>
+        </ul>
+        <br>
+        <h3><b>Jose Peppers - </b><i>Server</i></h3>
+        <ul>
+            <li>Served lunch and dinner 30-50 customers per shift with up to 5 tables</li>
+            <li>Increased customer satisfaction by successfully resolving conflict regarding food quality or seating arrangements</li>
+            <li>Attended to each different detail between 5 tables upon customer request while maintain backend tasks</li>
+        </ul>
+    </div>
+
+    <div id="tab6" class="tab">
+        <h2>Contact Me</h2>
+        <p>Email Address: <a href="mailto: anfgv@umsystem.edu">anfgv@umsystem.edu</a></p>
+        <p>Phone Number: 816-349-1710</p>
+    </div>
+</div>
+</body>
+
+<script>
+    function showTab(tabName) {
+        var tabs = document.getElementsByClassName("tab");
+        for (var i = 0; i < tabs.length; i++) {
+            tabs[i].style.display = "none";
+        }
+        document.getElementById(tabName).style.display = "block";
+    }
+
+    
+
+</script> 
+</html>

@@ -1,0 +1,135 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+h2{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 6ch;
+}
+p{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 4ch;
+}
+h3,h4,h5{
+  font-family: 'Times New Roman', Times, serif;
+  margin:3px
+}
+ul{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3ch;
+}
+
+img{
+  margin-right: 30px;
+}
+#sidebar {
+  width: 200px;
+  height: 100vh;
+  background-color: #795b4d;
+  padding: 20px;
+}
+#content {
+  flex: 1;
+  padding: 20px;
+  background: #795b4d;
+
+}
+.tab {
+  display: none;
+  width: 92%;
+  height: 90%;
+  padding: 14px 40px;
+  border-radius: 18px;
+  background: #599763;
+  box-shadow: inset -27px -27px 54px #3c6542,
+              inset 27px 27px 54px #76c984;
+}
+
+ 
+.btn {
+  width: 175px;
+  background-color: #449251;
+  padding: 14px 40px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px dashed #449251;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .4s;
+  margin-bottom: 15px;
+ }
+ 
+ .btn span:last-child {
+  display: none;
+ }
+ 
+ .btn:hover {
+  transition: .4s;
+  border: 2px dashed #449251;
+  background-color: #fff;
+  color: #449251;
+ }
+ 
+ .btn:active {
+  background-color: #87db87;
+ }
+
+ /* From uiverse.io by @Ali-Tahmazi99 */
+.btn2 {
+  display: inline-block;
+  width: 500px;
+  height: 150px;
+  border-radius: 10px;
+  border: 1px solid #03045e;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 1;
+ }
+ 
+ .btn2::before,
+ .btn2::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transform: skew(15deg);
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: -1;
+ }
+ 
+ .btn2::before {
+  left: -10px;
+  background: #004606;
+ }
+ 
+ .btn2::after {
+  right: -10px;
+  background: #1e811e;
+ }
+ 
+ .btn2:hover::before,
+ .btn2:hover::after {
+  width: 58%;
+ }
+ 
+ .btn2:hover span {
+  color: #abdfaf;
+  transition: 0.3s;
+ }
+ 
+ .btn2 span {
+  color: #412626;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  transition: all 0.3s ease-in;
+ }
+
+ 
+ 
